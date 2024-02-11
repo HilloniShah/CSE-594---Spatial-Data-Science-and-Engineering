@@ -1,9 +1,9 @@
-# Project Title: Spatial Data Science & Engineering Project: Trajectory Analysis and Visualization
+# Spatial Data Science & Engineering Project: Trajectory Analysis and Visualization
 
 ## Description:
 
 This repository contains the code and resources for our Spatial Data Science & Engineering project, divided into two phases:
-## Phase 1: Apache Sedona for Trajectory Queries (Maximum points: 8)
+## Phase 1: Apache Sedona for Trajectory Queries
 
 * Setup: Instructions for setting up the working environment with Java, Hadoop, Spark, and necessary tools are provided, building upon the foundation established in Assignment-1/Assignment-3.
 * Trajectory Data Fundamentals: Understanding of trajectory data, trajectory queries, and compatible databases and tools is addressed.
@@ -14,22 +14,21 @@ This repository contains the code and resources for our Spatial Data Science & E
     * getSpatioTemporalRange(): Returns trajectories within a specified spatiotemporal range (latitude, longitude, timestamp).
     * getKNNTrajectory(): Identifies the K nearest neighbor trajectories based on minimum pairwise distances.
 
-## Phase 2: Visualization with Deck.gl/pydeck (Maximum points: 7)
+## Phase 2: Visualization with pydeck
 
 * Front-End Interface: A user-friendly interface designed with any language, allowing interaction with Phase 1 functionality and visualization:
-    * Trips layer from Deck.gl or pydeck to visualize trajectory movements.
+    * Trips layer from pydeck to visualize trajectory movements.
     * Options to:
         * Load trajectory datasets (local file browsing).
         * Provide spatial range query inputs (latitude, longitude).
         * Provide spatiotemporal range query inputs (latitude, longitude, timestamp).
         * Provide KNN query inputs (trajectory ID, K value).
-        * 
 * API Communication: A robust API facilitates seamless communication between the front-end interface and the running Phase 1 project:
     * Sends user inputs from the interface to Phase 1 for query execution.
     * Receives query results from Phase 1 and transmits them back to the interface for visualization.
   
 * Visualization Library: Either Deck.gl or pydeck can be used for trajectory visualization.
-* 
+
 * Optional: Enhancements to improve input flexibility can be explored, such as:
     * Rectangular tool for selecting spatial ranges.
     * Horizontal bar for selecting temporal ranges.
@@ -39,10 +38,6 @@ This repository contains the code and resources for our Spatial Data Science & E
 
 * src/main/scala/: Scala code for Phase 1, including ManageTrajectory.scala.
 * data/: Sample trajectory datasets (e.g., simulated_trajectories.json).
-* src/main/python/: (Optional) Python code for Phase 2 interface and API (if using pydeck).
-* frontend/: (Optional) Front-end code and assets for Phase 2 interface (based on your chosen language).
-* docs/: Additional documentation, screenshots, or tutorials (optional).
-
   
 ## Running the Project:
 
